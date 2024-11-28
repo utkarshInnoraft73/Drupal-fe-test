@@ -1,0 +1,6 @@
+name: drupal-fe
+recipe: drupal10
+config:
+  webroot: web
+  php: 8.3
+  via: nginx
