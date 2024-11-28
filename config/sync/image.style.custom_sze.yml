@@ -1,0 +1,14 @@
+uuid: dec84fc8-f8e1-4865-a212-3b59a1ba8e60
+langcode: en
+status: true
+dependencies: {  }
+name: custom_sze
+label: custom-sze
+effects:
+  ff2abc50-0a88-4588-abb3-67d251322158:
+    uuid: ff2abc50-0a88-4588-abb3-67d251322158
+    id: image_resize
+    weight: 1
+    data:
+      width: 300
+      height: 300

@@ -1,0 +1,9 @@
+uuid: 506f991b-df6c-4770-b1b6-169e7425439d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Design type'
+vid: design_type
+description: 'There are many different design pattern present on the site for the blog'
+weight: 0
+new_revision: false

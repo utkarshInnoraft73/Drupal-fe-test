@@ -1,0 +1,36 @@
+/**
+ * @file for CSS Design 2.
+ */
+@use "./../impoter" as *;
+@use "./../base/mixin" as *;
+.design-2 {
+  height: 100%;
+  background-color: #fff;
+  padding: 6.5rem 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  .blog-page {
+    &__card-image {
+      @include image-style(200px, 200px);
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+        @include image-style(100%, 100%);
+      }
+    }
+    &__card-text {
+      margin-top: 2rem;
+      text-align: center;
+      p {
+        @include sub-text($dark-gray-color, Roboto-regular, 0.8rem)
+      }
+      &--header {
+        @include header-design(1rem, "", "", 1rem, 600, $blue-color, Roboto-regular);
+      }
+    }
+  }
+}

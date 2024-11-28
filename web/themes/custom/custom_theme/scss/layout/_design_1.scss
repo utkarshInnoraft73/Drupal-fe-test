@@ -1,0 +1,49 @@
+/**
+ * @file for CSS Design 1.
+ */
+@use "./../impoter" as *;
+@use "./../base/mixin" as *;
+.design-1 {
+  height: 100%;
+  background-color: $bg-color;
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .blog-page {
+    &__card-image {
+      width: 100%;
+      position: relative;
+      height: 300px;
+      &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 35%;
+        background-color: #f8327d;
+        opacity: 0.5;
+      }
+      img {
+        @include image-style(100%, 75%);
+      }
+    }
+    &__card-text {
+      margin: 2rem 0px;
+      @media screen and (max-width: 576px) {
+        margin-top: 1rem;
+      }
+      p {
+        @include sub-text($dark-gray-color, Roboto-regular, 1rem);
+      }
+      &--header {
+        @include header-design(
+          1rem,
+          uppercase,
+          0.2rem,
+          1rem,
+          700,
+          $dark-color,
+          Roboto-regular
+        );
+      }
+    }
+  }
+}

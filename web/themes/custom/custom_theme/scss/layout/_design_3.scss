@@ -1,0 +1,42 @@
+/**
+ * @file for CSS Design 3.
+ */
+@use "./../impoter" as *;
+@use "./../base/mixin" as *;
+.design-3 {
+  position: relative;
+  background-color: $bg-color;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 100%;
+  .blog-page {
+    &__card-image {
+      @include image-style("", 454px);
+      img {
+        @include image-style(100%, 100%);
+      }
+    }
+    &__card-text {
+      p {
+        padding: 1.3rem;
+        position: absolute;
+        top: 2.5rem;
+        color: #fff;
+        font-family: Roboto-regular;
+        font-size: 1rem;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+          top: 1.5rem;
+          left: 50px;
+        }
+        @media screen and (max-width: 400px) {
+          top: 1.5rem;
+          left: 10px;
+        }
+      }
+      &--header {
+        @include header-design("", "", "", 1rem, 600, $dark-gray-color, Roboto-regular);
+        margin: 2rem 1rem;
+      }
+    }
+  }
+}
