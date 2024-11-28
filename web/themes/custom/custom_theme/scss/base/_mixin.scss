@@ -1,0 +1,24 @@
+/**
+ * @file for CSS mixins.
+ */
+
+@use "./../impoter" as *;
+
+@mixin header-design($mt, $tt, $ls, $fs, $fw, $cl, $ff){
+  margin-top: $mt;
+  text-transform: $tt;
+  letter-spacing: $ls;
+  font-size: $fs;
+  font-weight: $fw;
+  color: $cl;
+  font-weight: $ff;
+}
+@mixin sub-text($cl, $ff, $fs){
+  color: $cl;
+  font-family: $ff;
+  font-weight: $fs;
+}
+@mixin image-style ($w, $h){
+  width: $w;
+  height: $h;
+}

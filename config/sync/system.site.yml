@@ -2,8 +2,8 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 1c404cdd-1c61-4e1a-b0f4-2e5bf491c4e2
-name: Drupal
-mail: ''
+name: drupal
+mail: utkarsh.singh@innoraft.com
 slogan: ''
 page:
   403: ''
